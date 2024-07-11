@@ -212,55 +212,138 @@ themeButton.addEventListener("click", () => {
 });
 
 /* kk starts */
-const testimonialsContainer = document.querySelector(".testimonials-container");
+const testimonialsContainer = document.querySelector(".testimonial-container");
 const testimonial = document.querySelector(".testimonial");
 const userImage = document.querySelector(".user-image");
 const username = document.querySelector(".username");
 const role = document.querySelector(".role");
-const footer = document.getElementById("footer");
+const linkedinLink = document.querySelector(".linkes");
 
 const testimonials = [
   {
-    name: "",
-    position: "",
-    photo:
-      "https://pbs.twimg.com/profile_images/549991240415313920/BWEI-HJ4.jpeg",
-    text:
-      "Props to Blue Check for making the verification process painless and fast - only taking a few days in my case! Being verified has helped me gain more validity as a musician and opened up the opportunity to collab with some amazing artists.",
+    name: "» Chinmay Dalavi",
+    position: "Sr. ML Engineer <small><class style='font-family:courier'> @Wipro AI Solutions</style>",
+    photo: "./packages/images/ChinmayD.jfif",
+    text: "We contibuted in same external project and Kunal's data driven stretegies were really helpful. His ability to uncover hidden data patterns and forecasted trends was instrumental in optimizing existing processes.",
+    linkrefs: "https://www.linkedin.com/in/chinmay-dalvi-362a89a6/",
   },
   {
-    name: "",
-    position: "",
-    photo:
-      "https://pbs.twimg.com/profile_images/1086022851503648769/baqPNKru.jpg",
-    text:
-      "Blue Check is awesome! the process was easy, straightforward and only took a few days. I definitely recommend working with them.",
+    name: "» Shivani Ayagole",
+    position: "Big Data Developer<small><class style='font-family:courier'> @GSPANN Technologies</style>",
+    photo: "./packages/images/ShivaniA.jfif",
+    text: "I had the pleasure of working closely with Kunal and his analytical thinking shone brightly. He was consistently amazed us with the depth of insight derived from complex datasets, which directly contributed to our strategic decision-making.",
+    linkrefs: "https://www.linkedin.com/in/shivani-ayagole-110/",
   },
   {
-    name: "",
-    position: "",
-    photo: "https://i.ido.bi/assets/post/2020/11/All-My-Friends-Hate-Me-650x650.jpg",
-    text:
-      "We weren't sure if we qualified so when we got verified it was a killer surprise.",
+    name: "» Akshay Bharambe",
+    position: "Principal SDE II <small><class style='font-family:courier'>@Connectwise</style>",
+    photo: "./packages/images/AkshayB.jfif",
+    text: "I was extremely satisfied with the automated AI-ML pipeline design and implement on GCP. Kunal's DS strategies were noticable,  he was great analytical thinker.",
+    linkrefs: "https://www.linkedin.com/in/akshaybharambe14/",
   },
   {
-    name: "",
-    position: "",
-    photo:
-      "https://boneclones.com/images/store-product/product-1551-main-main-big-1415043687.jpg",
-    text: "We are a small business with a big reputation. Blue Check helped us secure verification for our museum which has made it easier for our customers to find us online. They helped us out digitally so now we can focus on what we do best.",
+    name: "» Swapnali Gunje",
+    position: "Associate Consultant<small><class style='font-family:courier'> @Red Hat</style>",
+    photo: "./packages/images/SwapnaliG.jfif",
+    text: "He was expert in machine learning and Kunal'showed a high level of professionalism while working with GitHub project. I was very happy with contibuting with him.",
+    linkrefs: "https://www.linkedin.com/in/ssgunje/",
+  },
+  {
+    name: "» Ankit Sinha",
+    position: "Associate DE Manager <small><class style='font-family:courier'>@Tredence Inc</style>",
+    photo: "./packages/images/AnkitS.jfif",
+    text: "During our time together at GSPANN, he had exceptional problem-solving skills firsthand with data pipeline management and DS integrations for in-house modules.",
+    linkrefs: "https://www.linkedin.com/in/ankit-sinha-534689130/",
+  },
+  {
+    name: "» Mrinal Dhasmana",
+    position: "Data Scientist <small><class style='font-family:courier'>@GSPANN Technologies</style>",
+    photo: "./packages/images/MrinalD.jfif",
+    text: "I had the privilege of collaborating with Kunal on several critical DS modules in project. His leadership in integrating data science with business objectives was exemplary. Also, he is always trying out new AI modules and guided team members.",
+    linkrefs: "https://www.linkedin.com/in/mrinaldhasmana/",
+  },
+  {
+    name: "» Hitech Chaudhari",
+    position: "Technical Lead <small><class style='font-family:courier'>@GSPANN Technologies</style>",
+    photo: "./packages/images/HiteshC.jfif",
+    text: "I closely worked with Kunal on integrations of ML regression models on AWS with React, TypeScript, VueJS. His Data Science methods with API integrations were excellent. We had shared same Tech Space for ChatBot design recently.",
+    linkrefs: "https://www.linkedin.com/in/hitesh-suresh-chaudhari/",
+  },
+  {
+    name: "» Aparna Singh",
+    position: "Sr. Data Science Consultant<small><class style='font-family:courier'> @eClerx</style>",
+    photo: "./packages/images/AparnaS.jfif",
+    text: "Kunal contributed in out team at Tech Fest Forum earlier, where I observed his impressive adaptability and learning agility. He has very good knowledge in AI-ML tools.",
+    linkrefs: "https://www.linkedin.com/in/aparna-singh-33b383193/",
+  },
+  {
+    name: "» Nipun Borole",
+    position: "Sr. Technical Analyst <small><class style='font-family:courier'>@Jade Global Solutions</style>",
+    photo: "./packages/images/NipunB.jfif",
+    text: "Kunal consistently inspired the team to push boundaries on AI-ML fields and deliver outstanding demonstrations. He was hard-working, speaker, good asset with AI-ML technoloogies.",
+    linkrefs: "https://www.linkedin.com/in/nipun294/",
+  },
+  {
+    name: "» Aishna Arora",
+    position: "Data Scientist <small><class style='font-family:courier'> @JP Morgan & Chase</style>",
+    photo: "./packages/images/AishnaA.jfif",
+    text: "Kunal's proactive approach to continuous learning significantly contributed to our POC product. He was part of DS event and contributed in event via GitHib.",
+    linkrefs: "https://www.linkedin.com/in/aishna-arora-b92175197/",
+  },
+  {
+    name: "» Saurabh Chaudhari",
+    position: "Data Science Developer<small><class style='font-family:courier'> @Mercedes-Benz R&D India</style>",
+    photo: "./packages/images/SaurabhC.jfif",
+    text: "DS algorithms explanations and implementation skills of Kunal was remarkable and enhanced our ability to deliver impactful results on the project phases.",
+    linkrefs: "https://www.linkedin.com/in/saurabh-chaudhari-3709b7180/",
+  },
+  {
+    name: "» Trupti Chavan",
+    position: "Lead Data Scientist <small><class style='font-family:courier'> @Deloitte</style>",
+    photo: "./packages/images/TruptiC.jfif",
+    text: "Kunal's most impressive characteristic is their passion for helping us solve our problems. He truly believe in what we're trying to achieve and confident on delivering AI-ML solutions.",
+    linkrefs: "https://www.linkedin.com/in/trupti-chavan-992a999b/",
+  },
+  {
+    name: "» Mangesh Meshram",
+    position: "Sr. Technical Lead <small><class style='font-family:courier'>@KPIT Technologies</style>",
+    photo: "./packages/images/MangeshM.jfif",
+    text: "It was untangling intricate data issues / devising innovative solutions, approached every challenge with a blend of methodical analysis and creative thinking by Kunal resulting to quick resolutions and achieving project goals.",
+    linkrefs: "https://www.linkedin.com/in/mangesh-meshram-b3419161/",
+  },
+  {
+    name: "» Shlok Borole",
+    position: "Big Data Engineer<small><class style='font-family:courier'> @RBL Bank</style>",
+    photo: "./packages/images/ShlokB.jfif",
+    text: "Kunal was my mentor and he was excellent at DS side. His guidance, support and mock interview session was valuable.",
+    linkrefs: "https://www.linkedin.com/in/shlok-borole-1908/",
+  },
+  {
+    name: "» Nidhi Chaudhari",
+    position: "Lead HR<small><class style='font-family:courier'> @KPIT Technologies</style>",
+    photo: "./packages/images/NidhiS.jfif",
+    text: "Kunal is quick learner and anlytical thinker. He was in-house project module and delivered automated ML pipeline based on NLP and stats mechanisms.",
+    linkrefs: "https://www.linkedin.com/in/nidhi-chaudhari-386306115/",
+  },
+  {
+    name: "» Rajan Bhirud",
+    position: "Sr. System Engineer<small><class style='font-family:courier'> @NVDIA</style>",
+    photo: "./packages/images/RajanB.jfif",
+    text: "Kunal was forthright on the probabilistic nature of developing AI-ML solutions to challenging environments. A lot of the data driven work had some experimentals during our meets-ups.",
+    linkrefs: "https://www.linkedin.com/in/rajan-bhirud/",
   },
 ];
 
-let idx = 1;
+let idx = 0;
 
 function updateTestimonial() {
-  const { name, position, photo, text } = testimonials[idx];
+  const { name, position, photo, text, linkrefs } = testimonials[idx];
 
   testimonial.innerHTML = text;
   userImage.src = photo;
   username.innerHTML = name;
   role.innerHTML = position;
+  linkedinLink.href = linkrefs;
 
   idx++;
 
@@ -269,7 +352,5 @@ function updateTestimonial() {
   }
 }
 
-setInterval(updateTestimonial, 10000);
+setInterval(updateTestimonial, 4000);
 
-const currentDate = new Date().getFullYear();
-footer.innerText = "Copyright © " + currentDate;
