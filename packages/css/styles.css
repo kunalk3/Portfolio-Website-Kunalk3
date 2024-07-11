@@ -864,7 +864,7 @@ img {
 }
 
 /*==================== TESTIMONIAL ====================*/
-.testimonial__data,
+/* .testimonial__data,
 .testimonial__header {
   display: flex;
 }
@@ -901,7 +901,7 @@ img {
 
 .swiper-container .swiper-pagination-testimonial {
   bottom: 0;
-}
+} */
 
 /*==================== CONTACT ME ====================*/
 .contact__container {
@@ -1116,7 +1116,7 @@ img {
     width: 200px;
   }
 
-  .testimonial__header,
+  /* .testimonial__header,
   .testimonial__data {
     flex-direction: column;
     align-items: center;
@@ -1130,7 +1130,7 @@ img {
   .testimonial__data,
   .testimonial__description {
     text-align: center;
-  }
+  } */
 }
 
 /* For medium devices */
@@ -1397,7 +1397,7 @@ img {
 
 /* kk starts */
 .testimonial-container {
-  background-color: #458eff;
+  background-color: var(--first-color);
   color: white;
   border-radius: 15px;
   margin: 75px auto;
@@ -1421,10 +1421,55 @@ img {
   right: 40px;
 }
 
+.testimonial {
+  line-height: 28px;
+  text-align: justify;
+  margin: 20px 0;
+  
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user .user-image {
+  border-radius: 50%;
+  height:80px;
+  width: 80px;
+  object-fit: cover;
+  border: 3px solid rgb(255, 255, 255)
+}
+
+.user .user-details {
+  margin-left: 10px;
+}
+
+.user .user-name {
+  margin: 0;
+}
+
+.user .role {
+  /* font-weight: normal; */
+  font-size: 0.95rem;
+  /* margin: 10px 0; */
+}
+
+.user .linkes {
+  margin: 0px;
+}
+
 .progress-bar {
-  background-color: #ff0000;
-  height: 40px;
-  width: 100%;
-  animation: grow 10s linear infinite;
+  background-color: #fff !important;
+  height: 4px !important;
+  width: 100% !important;
+  animation: grow 4s linear infinite;
   transform-origin: left;
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+  }
 }

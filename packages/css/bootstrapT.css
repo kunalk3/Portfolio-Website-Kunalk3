@@ -1212,9 +1212,9 @@ textarea.form-control {
   height: auto;
 }
 
-input[type="search"] {
+/* input[type="search"] {
   -webkit-appearance: none;
-}
+} */
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   input[type="date"].form-control,
@@ -4420,7 +4420,7 @@ button.close {
   cursor: pointer;
   background: transparent;
   border: 0;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
 }
 
 .modal-open {

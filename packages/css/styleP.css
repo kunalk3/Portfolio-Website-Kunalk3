@@ -26,8 +26,7 @@
   height: 100vh;
   opacity: 0.6;
   background-color: white;
-  /*z-index: 101;*/
-  z-index: 10;
+  z-index: 101;
 }
 
 .containerA .content {
@@ -38,7 +37,6 @@
 h2 {
   font-weight: 600;
   margin-bottom: 10px;
-  color: #333;
 }
 
 .containerA .content img {
@@ -300,8 +298,7 @@ h2 {
   display: none;
   flex-direction: column;
   background-color: #2f2f2fec;
-  /*z-index: 1000;*/
-  z-index: 12;
+  z-index: 1000;
 }
 
 .scrollable .fullScreenDP .insideDP{
@@ -491,8 +488,7 @@ h2 {
   visibility: visible;
   opacity: 1;
   transition: 0.5s;
-  /*z-index: 1000;*/
-  z-index: 12;
+  z-index: 1000;
 }
 
 @media screen and (max-width: 655px) {
