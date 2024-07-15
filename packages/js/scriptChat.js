@@ -6,7 +6,7 @@ var contactString = "<div class='social'>\
     <a target='_blank' href='https://github.com/kunalk3/'> <div class='socialItem' id='call'><img class='socialItemI' src='./packages/images/github.svg' alt=''> GitHub </div> </a> \
     <a target='_blank' href='https://wa.me/91_ _ _ _ _ _ _ 701'> <div class='socialItem' id='call'><img class='socialItemI' src='./packages/images/whatsapp.svg' alt=''> Whatsapp </div> </a> \
     <a target='_blank' href='https://www.instagram.com/kkunalkkolhe/'> <div class='socialItem' id='call'><img class='socialItemI' src='./packages/images/instagram.svg' alt=''> Instagram </div> </a> </div>";
-var resumeString = "<img src='images/resumeThumbnail.png' class='resumeThumbnail'><div class='downloadSpace'><div class='pdfname'><img src='images/pdf.png'><label>KunalK_Resume.pdf</label></div><a href='assets/KunalK_Resume.pdf' download='KunalK_Resume.pdf'><img class='download' src='images/downloadIcon.svg'></a></div>";
+var resumeString = "<img src='../packages/images/resumeThumbnail.PNG' class='resumeThumbnail'><div class='downloadSpace'><div class='pdfname'><img src='../packages/images/pdf.png'><label>KunalK_Resume.pdf</label></div><a download href='../packages/js/KunalK_Resume.pdf'><img class='download' src='../packages/images/downloadIcon.svg'></a></div>";
 var addressString = "<div class='mapview'><iframe src='https://www.google.com/maps/embed/v1/place?q=pune+viman+nagar&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8' class='map'></iframe></div>Solitaire Business Hub, opp. Neco Garden Road, Society, Clover Park, Viman Nagar, Pune, Maharashtra 411014";
 function startFunction() {
     setLastSeen();
@@ -150,7 +150,7 @@ function waitAndResponce(inputText) {
             break;
 
         case "projects":
-            sendTextMessage("Check out my projects contributions, visit my GitHub Account.<br><br><div class='social'><a target='_blank' href='https://github.com/kunalk3/'> <div class='socialItem'><img class='socialItemI' src='./packages/images/github.svg' alt=''></div> </a></div>");
+            sendTextMessage("Check out my project highlighted contributions, visit my GitHub Account / Porfolio Sections.<br><br><div class='social'><a target='_blank' href='https://github.com/kunalk3/'> <div class='socialItem'><img class='socialItemI' src='./packages/images/github.svg' alt=''></div> </a></div>");
             break;
 
         case "new":
