@@ -1,4 +1,4 @@
-var audio = new Audio('assets/sentmessage.mp3');
+var audio = new Audio('./packages/js/sentmessage.mp3');
 var contactString = "<div class='social'>\
     <a href='https://www.linkedin.com/in/kunalkolhe3/' target='_blank' rel='noopener noreferrer'> <div class='socialItem' id='call'><img class='socialItemI' src='./packages/images/linkedin.svg' alt=''> Linkedin </div> </a> \
     <a target='_blank' href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=kunalkoleh333@gmail.com'> <div class='socialItem' id='call'><img class='socialItemI' src='./packages/images/gmail.svg' alt=''> Email </div> </a> \
